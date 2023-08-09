@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header {
+    background-color:black;
+    padding: 16px 0;
+    color: aliceblue;
+}
+
+header .container {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li a {
+    color:beige;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+header li a:hover {
+    text-decoration:none;
+}
+
+header li {
+    display: inline;
+    margin-left: 16px;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto 0 auto;
+}
+
+.articles {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.articles article img {
+    /* height: 180px; */
+    height: 250px;
+    width: 100%;
+    }
+
+.articles article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.articles article {
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a {
+    color:aliceblue;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.articles article a:hover {
+    text-decoration:underline;
+}
+
+.articles article p,
+.articles article a {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#entretenimento {
+    background-color:rgba(205, 92, 92, 0.205);
+}
+
+#entretenimento .articles article a {
+    background-color: crimson;
+}
+
+#tecnologia {
+    background-color:rgba(137, 43, 226, 0.267);
+}
+
+#tecnologia .articles article a {
+    background-color:darkmagenta;
+}
