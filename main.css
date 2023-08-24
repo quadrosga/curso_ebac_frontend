@@ -1,0 +1,21 @@
+.container h1 {
+    color: rgb(95, 95, 139);
+}
+
+form input {
+    display: block;
+    padding: 3px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+button {
+    background-color: rgb(95, 95, 139);
+    color: aliceblue;
+    margin-bottom: 8px;
+    padding: 3px;
+}
+
+.container form {
+    color: blueviolet;
+}

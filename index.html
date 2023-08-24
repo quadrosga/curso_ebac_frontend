@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet"href="./main.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário</h1>
+        <form id="formulario">
+            <label for="nome"><b>Perdas:</b></label>
+            <input type="number" min="0" id="numero-perdas" required placeholder="Perdas" />
+            <label for="nome"><b>Ganhos:</b></label>
+            <input type="number" min="0" id="numero-ganhos" required placeholder="Ganhos" />
+        </form>
+        <br/>
+        <div class="container">
+            <button type="submit">
+                Enviar
+            </button>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
