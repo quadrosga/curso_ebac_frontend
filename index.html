@@ -10,28 +10,17 @@
     <div class="container">
         <h1>Formulário</h1>
         <form id="formulario" onsubmit="return validaForm();"> 
-            <label for="nome"><b>Perdas:</b></label>
+            <label for="numero-perdas"><b>Perdas:</b></label>
             <input type="number" min="0" id="numero-perdas" required placeholder="Perdas" />
-            <label for="nome"><b>Ganhos:</b></label>
+            <label for="numero-ganhos"><b>Ganhos:</b></label>
             <input type="number" min="0" id="numero-ganhos" required placeholder="Ganhos" />
+
             
             <div class="container">
                 <button type="submit">Enviar</button> 
             </div>
         </form>
     </div>
+<script src="main.js"></script>
 </body>
-<script type="text/javascript">
-    function validaForm() {
-        const numeroPerdas = document.getElementById("numero-perdas").value;
-        const numeroGanhos = document.getElementById("numero-ganhos").value;
-        
-        if (numeroPerdas >= numeroGanhos) {
-            alert("O valor de ganhos deve ser maior que o de perdas!");
-            return false;
-        } else {
-            return true;
-        }
-    }
-</script>
 </html>
