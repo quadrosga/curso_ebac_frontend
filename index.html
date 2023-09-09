@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css"/>
+</head>
+<body>
+    <header>Formulário de Cadastro</header>
+    <div class="container">
+        <form>
+            <label>Nome:</label>
+            <input type="text" name="nome" required placeholder="Nome completo"/>
+            <label>E-mail:</label>
+            <input type="email" name="email" required placeholder="exemplo@email.com"/>
+            <label>Telefone:</label>
+            <input type="tel" name="tel" id="tel" required placeholder="(12)34567-8900"/>
+            <label>CPF:</label>
+            <input type="text" name="cpf" id="cpf" required placeholder="123.456.789-00"/>
+            <label>Endereço:</label>
+            <input type="text" name="endereço" required placeholder="Endereço, N°"/>
+            <label>CEP:</label>
+            <input type="text" name="cep" id="cep" required placeholder="12345-678"/>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="jquery.mask.min.js"></script>
+    <script src="jquery.validate.min.js"></script>
+    <script src="messages_pt_PT.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

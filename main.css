@@ -1,0 +1,52 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: dimgray;
+}
+
+.container {
+    margin-top: 18px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container label,
+.container input {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 3px;
+}
+
+button {
+    background-color: dimgray;
+    padding: 3px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    color:aliceblue;
+}
+
+label.error {
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+input:invalid.error {
+    border-color: red;
+}
