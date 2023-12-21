@@ -1,6 +1,12 @@
 {
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-obfuscate": "^0.2.9",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.69.5"
   },
   "name": "exerciciogulp",
   "version": "1.0.0",
@@ -244,8 +250,8 @@
     "static-extend": "^0.1.2",
     "stream-exhaust": "^1.0.2",
     "stream-shift": "^1.0.1",
-    "string-width": "^1.0.2",
     "string_decoder": "^1.1.1",
+    "string-width": "^1.0.2",
     "strip-ansi": "^3.0.1",
     "strip-bom": "^2.0.0",
     "supports-preserve-symlinks-flag": "^1.0.0",
