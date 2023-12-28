@@ -1,6 +1,8 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+// Configurar tarefas
+        // Configurar less em ambiente Dev e Dist(production)
         less: {
             development: {
                 files: {
@@ -16,6 +18,7 @@ module.exports = function(grunt) {
                 }
             }
         },
+        // Configurar watch para observar arquivos da src e substituir os caminhos no HTML
         watch: {
             less: {
                 files: ['src/styles/**/*.less'],
@@ -26,6 +29,7 @@ module.exports = function(grunt) {
                 tasks: ['replace:dev']
             }
         },
+        // Configurar replace em ambiente Dev e Dist
         replace: {
             dev: {
                 options: {
@@ -72,6 +76,7 @@ module.exports = function(grunt) {
                 ]
             }
         },
+        // Compressão do HTML 
         htmlmin: {
             dist: {
                 options: {
@@ -83,6 +88,7 @@ module.exports = function(grunt) {
                 }
             }
         },
+        // Compressão do JS 
         clean: ['prebuild'],
         uglify: {
             target: {
@@ -93,6 +99,7 @@ module.exports = function(grunt) {
         }
     })
 
+// Carregar tarefas npm 
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-replace');
@@ -100,6 +107,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-uglify');
 
+// Registrar tarefas Grunt (default, build)
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('build', ['less:production', 'htmlmin:dist', 'replace:dist', 'clean', 'uglify']);
 }
